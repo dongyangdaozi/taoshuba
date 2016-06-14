@@ -249,7 +249,7 @@ app.post('/post',function(req,res){
 });
 
 app.get('/detail/:_id', function(req,res){
-    console.log('查看笔记');
+    console.log('查看书籍');
     Book.findOne({_id:req.params._id})
         .exec(function(err,art){
             if(err){
